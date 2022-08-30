@@ -5,8 +5,13 @@
 */
 
 /* 2nd Exercise:
-  Create a keydown listener for enter.
-  To increase the counter.
+  add a click listener programmatically to the h1.
+  So it resets the count.
+*/
+
+/* Solo Exercise
+  Add a "load" event listener to the window.
+  So you can greet your users welcome with an alert
 */
 
 /* 3th Exercise:
