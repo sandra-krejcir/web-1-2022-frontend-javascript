@@ -9,16 +9,11 @@
   To increase the counter.
 */
 
-/* 3rd Exercise, solo:
-  Create a "reset" functionality, 
-  by listening for "Escape", and then reseting the counter to 0.
-*/
-
-/* 4th Exercise:
+/* 3th Exercise:
   Get the h1, and append the count
 */
 
-/* 5th Exercise:
+/* 4th Exercise:
   Create an input field type = number,
   allow the user to control how much we increase pr. time
 */
