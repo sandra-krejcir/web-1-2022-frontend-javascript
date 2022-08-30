@@ -6,10 +6,10 @@
 
 /* 2nd Exercise:
   Create a keydown listener for enter.
-
+  To increase the counter.
 */
 
 /* 3rd Exercise, solo:
   Create a "reset" functionality, 
-  by listening for escape, and then reseting the counter to 0.
+  by listening for "Escape", and then reseting the counter to 0.
 */
