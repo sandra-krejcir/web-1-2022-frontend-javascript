@@ -13,3 +13,12 @@
   Create a "reset" functionality, 
   by listening for "Escape", and then reseting the counter to 0.
 */
+
+/* 4th Exercise:
+  Get the h1, and append the count
+*/
+
+/* 5th Exercise:
+  Create an input field type = number,
+  allow the user to control how much we increase pr. time
+*/
