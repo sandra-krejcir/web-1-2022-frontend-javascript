@@ -18,7 +18,6 @@ function clicked() {
 
   // Solution 2:
   const span = document.querySelector("#count-amount");
-  span.TEXT_NODE;
   span.textContent = count;
 }
 
