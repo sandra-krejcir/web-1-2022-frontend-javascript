@@ -1,0 +1,14 @@
+#my_login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px;
+}
+
+.error {
+  border: 1px solid red;
+}
