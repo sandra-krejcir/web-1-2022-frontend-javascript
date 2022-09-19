@@ -22,23 +22,23 @@
             <h2>Create new contact</h2>
             <div class="form-element">
               <i class="bi bi-person-fill"></i>
-              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder="Name" required id="name" />
             </div>
             <div class="form-element">
               <i class="bi bi-person-fill"></i>
-              <input type="text" placeholder="Surname" />
+              <input type="text" placeholder="Surname" id="surname" />
             </div>
             <div class="form-element">
               <i class="bi bi-building"></i>
-              <input type="text" placeholder="Company" />
+              <input type="text" placeholder="Company" id="company" />
             </div>
             <div class="form-element">
               <i class="bi bi-phone-fill"></i>
-              <input type="tel" placeholder="Phone" />
+              <input type="tel" placeholder="Phone" id="phone" />
             </div>
             <div class="form-element">
               <i class="bi bi-envelope-fill"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="email" />
             </div>
             <input type="submit" value="Create" />
           </form>
@@ -49,9 +49,12 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script src="firebase-scripts.js"></script>
+    <script src="index-script.js"></script>
+    <script src="firebase-script.js"></script>
+
+    <!-- Contact card template -->
     <template id="contact-card">
-      <div class="mini-card" id="1">
+      <div class="mini-card" id="temp">
         <h3>
           <span id="name">Mathias</span> <span id="surname">Nielsen</span>
           <button>
@@ -60,7 +63,7 @@
         </h3>
         <p id="company">Cph Business</p>
         <p id="phone">+45 31314180</p>
-        <p id="mail">mtnl@cphbusiness.dk</p>
+        <p id="email">mtnl@cphbusiness.dk</p>
       </div>
     </template>
   </body>
