@@ -9,6 +9,9 @@ async function getData() {
 
 /**
  * A function that transform the Firebase Object in Object structure to Objects in Array.
+ *
+ * OBS! This is only needed due to the way Firebase works. OBS!
+ *
  * @param {Object} data
  * @returns Array
  */
@@ -24,9 +27,9 @@ function transformToArray(data) {
   return toReturn;
 }
 
-async function sendData(contact, method) {
+async function postData(contact) {
   const response = await fetch(url, {
-    method: method,
+    method: "POST",
     body: JSON.stringify(contact),
   });
   return response;

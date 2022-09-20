@@ -11,7 +11,7 @@ form.addEventListener("submit", async (event) => {
     email: document.querySelector("#email").value,
   };
 
-  const response = await sendData(contact, "POST");
+  const response = await postData(contact);
   console.log(response);
 
   if (response.status === 200) {
