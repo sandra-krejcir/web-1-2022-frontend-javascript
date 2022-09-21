@@ -11,6 +11,18 @@ async function getSpecificContact(id) {
   const response = await fetch(url + "/" + id + ".json");
   const body = await response.json();
   console.log(body);
+  return body;
+}
+
+function putSpecificContact(id, contact) {
+  console.log(id, contact);
+  fetch(url + "/" + id + ".json", {
+    method: "PUT",
+    body: JSON.stringify(contact),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 }
 
 /**
