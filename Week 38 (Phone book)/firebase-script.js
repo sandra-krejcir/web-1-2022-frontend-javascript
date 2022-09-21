@@ -1,10 +1,16 @@
-const yourId = "";
-const url = `https://web-1st-semester-default-rtdb.europe-west1.firebasedatabase.app/web-update-project/${yourId}.json`;
+const yourId = "-NCAr6bv30Y-Ad_6auEj";
+const url = `https://web-1st-semester-default-rtdb.europe-west1.firebasedatabase.app/web-update-project/${yourId}`;
 
 async function getData() {
-  const response = await fetch(url);
+  const response = await fetch(url + ".json");
   const body = await response.json();
   return transformToArray(body);
+}
+
+async function getSpecificContact(id) {
+  const response = await fetch(url + "/" + id + ".json");
+  const body = await response.json();
+  console.log(body);
 }
 
 /**
@@ -28,7 +34,7 @@ function transformToArray(data) {
 }
 
 async function postData(contact) {
-  const response = await fetch(url, {
+  const response = await fetch(url + ".json", {
     method: "POST",
     body: JSON.stringify(contact),
   });
