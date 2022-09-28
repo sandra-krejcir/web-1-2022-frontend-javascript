@@ -1,11 +1,6 @@
 function transactionRow(transaction) {
-  /*
-  <tr></tr>
-  <td></td>
-  <td></td>
-  <td></td>
- */
   const tr = document.createElement("tr");
+
   const tdName = document.createElement("td");
   const tdPrice = document.createElement("td");
   const tdDate = document.createElement("td");

@@ -14,8 +14,9 @@ h1 {
 
 header {
   background-color: #9e120c;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 main {
@@ -32,7 +33,8 @@ main {
 
 .transactions {
   width: 65%;
-  height: 150vh;
+  padding-top: 69px;
+  min-height: 95vh;
 }
 
 .sidebar {
