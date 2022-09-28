@@ -32,7 +32,10 @@ function transactionTable(transactions) {
   tr.appendChild(thDate);
 
   // And handle the looping
-  transactions.map((transaction) => {
+  transactions.forEach((transaction) => {
     const row = transactionRow(transaction);
+    table.appendChild(row);
   });
+
+  return table;
 }
