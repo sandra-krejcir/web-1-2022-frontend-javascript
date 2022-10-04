@@ -6,15 +6,15 @@ function transactionTable(transactions) {
   // Needs to create the table
   // Creating all the elements
   const table = document.createElement("table");
+
   const tr = document.createElement("tr");
   const thName = document.createElement("th");
   const thPrice = document.createElement("th");
-  const thDate = document.createElement("th");
+  const thDate = dateTableHeader();
 
   // Adding header titles
   thName.textContent = "Name";
   thPrice.textContent = "Price";
-  thDate.textContent = "Transaction date";
 
   // Collect the pieces
   table.appendChild(tr);
@@ -31,4 +31,38 @@ function transactionTable(transactions) {
   table.append(...rows);
 
   return table;
+}
+
+// ------------- Bootstrap Icons -----------------
+const sortDown = document.createElement("i");
+sortDown.classList.add("bi", "bi-arrow-down");
+
+const sortUp = document.createElement("i");
+sortUp.classList.add("bi", "bi-arrow-up");
+// -----------------------------------------------
+
+function dateTableHeader() {
+  const thDate = document.createElement("th");
+  thDate.classList.add("clickable-header");
+  thDate.addEventListener("click", switchSort);
+
+  const div = document.createElement("div");
+  div.classList.add("temp");
+  div.textContent = "Transaction date";
+
+  const iconSpan = document.createElement("span");
+  iconSpan.id = "date-table-header-icon";
+  div.appendChild(iconSpan);
+  thDate.appendChild(div);
+  return thDate;
+}
+
+function switchSort() {
+  sortAsc = !sortAsc;
+  const iconSpan = document.querySelector("#date-table-header-icon");
+  if (sortAsc) {
+    iconSpan.replaceChildren(sortDown);
+  } else {
+    iconSpan.replaceChildren(sortUp);
+  }
 }
