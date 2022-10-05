@@ -1,4 +1,4 @@
-const yourId = "";
+const yourId = "-NCAr6_xwydIcAcGho0P";
 const url = `https://web-1st-semester-default-rtdb.europe-west1.firebasedatabase.app/web-update-project/${yourId}.json`;
 
 async function getData() {
