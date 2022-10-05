@@ -1,0 +1,49 @@
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table > tr:first-child {
+  position: sticky;
+  top: 71px;
+  outline: 3px solid #d6b896;
+  margin: 3px;
+}
+
+table > tr:first-child > th {
+  background-color: hsl(2, 86%, 33%);
+  color: #d6b896;
+  border: 5px solid #d6b896;
+}
+
+tr > th {
+  min-width: 100px;
+}
+
+tr > th:first-child {
+  min-width: 500px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(158, 18, 12, 0.2);
+}
+
+.clickable-header {
+  cursor: pointer;
+}
+
+.clickable-header:active {
+  background-color: hsl(2, 86%, 28%);
+}
+
+#date-table-header-icon {
+  padding-left: 5px;
+}

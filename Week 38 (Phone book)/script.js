@@ -34,6 +34,14 @@ function fillContactTemplate(contact) {
   clone.querySelector("#company").textContent = contact.company;
   clone.querySelector("#phone").textContent = contact.phone;
   clone.querySelector("#email").textContent = contact.email;
+
+  // Finish the edit button
+  clone.querySelector("#edit-button").addEventListener("click", () => {
+    window.location.replace(
+      "/Week 38 (Phone book)/update.html?id=" + contact.id
+    );
+  });
+
   // Return the filled node
   return clone;
 }
